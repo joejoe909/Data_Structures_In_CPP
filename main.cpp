@@ -1,9 +1,7 @@
 #include <QCoreApplication>
 #include <iterator>
-#include <iostream>
 #include <algorithm>
 #include <array>
-#include <sstream>
 #include <QDebug>
 
 using namespace std;
@@ -23,15 +21,18 @@ int main(int argc, char *argv[])
            qDebug() <<"adding value to arr" <<arr[i]<< "adding value to aArray" << aArray[i];
        }
 
-       //show contents in arr using an iterator
-       for(auto element: arr)
+       qDebug() << endl;
+
+         for(auto element: arr)
        {
-           qDebug() << element;
+           qDebug() << "content of arr" <<element;
        }
+        //show contents in arr using an iterator
+       qDebug() << endl;
 
        for(auto it = arr.begin(); it != arr.end(); it++){
            auto element =(*it);
-           qDebug() << element;
+           qDebug() << "content of arr" <<element;
        }
 
 
